@@ -1,6 +1,8 @@
-# AndroidTest
+AndroidTest
+===========
 
-* gradle setting
+gradle setting
+--------------
 
     $ cat ~/.gradle/gradle.properties
     
@@ -9,10 +11,12 @@
     RELEASE_KEY_ALIAS=*****
     RELEASE_KEY_PASSWORD=*****
 
-* keystore setting
+keystore setting
+----------------
 
     $ keytool -genkey -v -keystore xxxxx.keystore -alias xxxxx -keyalg RSA -validity 10000
 
-* build
+build
+-----
 
     $ ./gradlew assembleRelease
